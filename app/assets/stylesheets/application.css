@@ -1,0 +1,54 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+  font-family: Arial;
+  font-size: 1rem;
+}
+
+.mensaje{
+  background-color: #FCF8E3;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+}
+
+#formulario-login{
+  text-align: center;
+  border: 1px solid #DDD;
+  width: 50%;
+  margin: 0px auto;
+}
+
+.espacio-usuario{
+  background-color: #EEE;
+  padding: 5px 12px;
+  text-align: right;
+}
+
+table.tabla {
+  border: 1px solid #DDD;
+  width: 50%;
+}
+
+table.tabla th{
+  background-color: #DFF;
+  padding: 5px; 
+  text-align: left;
+}
+
+table.tabla td{
+  padding: 5px 10px; 
+}

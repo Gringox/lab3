@@ -1,0 +1,18 @@
+<div id="formulario-login">
+  <h1><%=t(".titulo")%></h1>
+  <p>
+    <%=form_tag(controller: :sesion, action: :iniciar) do %>
+    <p>
+      <%=label_tag t(".nombre_usuario")%>
+      <%=text_field :usuario, :nombre_usuario %>
+    </p>
+    <p>
+      <%=label_tag t(".contrasena")%>
+      <%=password_field :usuario, :contrasena %>
+    </p>
+    <p>
+      <%=submit_tag t(".boton_iniciar")%>
+    </p>
+    <% end %>
+  </p>
+</div>

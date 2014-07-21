@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab3</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p class="espacio-usuario">
+  <%=t(:indicador_usuario, x: session[:usuario_actual] )%>
+  <%=link_to "Cerrar Sesión" , controller: :sesion, action: :cerrar %>
+</p>
+<% if flash[:mensaje] %>
+  <p class="mensaje">
+    <%=flash[:mensaje]%>
+  </p>
+<% end %>
+<%= yield %>
+
+</body>
+</html>

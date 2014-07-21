@@ -1,0 +1,16 @@
+<h1><%=t(".titulo")%></h1>
+<table class="tabla">
+  <tr>
+    <th><%=t(".titulo_nombre_usuario")%></th>
+    <th><%=t(".titulo_nombre")%></th>
+    <th><%=t(".titulo_contrasena")%></th>
+  </tr>
+  <% @usuarios.each do |u| %>
+    <tr>
+      <td><%=u.nombre_usuario%></td>
+      <td><%=u.nombre%></td>
+      <td><%=u.contrasena%></td>
+    </tr>
+  <% end %>
+</table>
+
